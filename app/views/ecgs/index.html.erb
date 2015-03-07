@@ -1,0 +1,25 @@
+<h1>Listing ecgs</h1>
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ecgs.each do |ecg| %>
+  <tr>
+    <td><%= ecg.value %></td>
+    <td><%= ecg.user_id %></td>
+    <td><%= link_to 'Show', ecg %></td>
+    <td><%= link_to 'Edit', edit_ecg_path(ecg) %></td>
+    <td><%= link_to 'Destroy', ecg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ecg', new_ecg_path %>
