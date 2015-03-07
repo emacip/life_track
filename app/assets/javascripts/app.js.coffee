@@ -1,7 +1,7 @@
 $ () ->
   start = () ->
     app.realtime.connect();
-    booksRouter = new app.routers.Books();
+    ecgsRouter = new app.routers.Ecgs();
     Backbone.history.start({pushState: true});
 
   start();

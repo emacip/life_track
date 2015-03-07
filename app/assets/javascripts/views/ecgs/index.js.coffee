@@ -7,24 +7,13 @@ app.views.ecgs.Index = Backbone.View.extend
 
   template : JST['templates/ecgs/index']
 
-  events : 
-    'click a[data-method=delete]' : 'destroy'
   
   initialize : ->
     @collection.on 'reset', @.render, @
     @collection.on 'change add remove', @.render, @
 
-  destroy : (evt) ->
-    evt.preventDefault()
-    $a = $(evt.currentTarget)
-    id = $a.attr('data-id')
-    model = @collection.get id
-    model.destroy()
-    @collection.remove model
-
-
   serialize : ->
-    books : @collection
+    ecgs : @collection
 
   render : ->
     @$el.html @template(@serialize())

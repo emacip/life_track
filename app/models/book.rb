@@ -3,6 +3,7 @@ class Book < ActiveRecord::Base
   after_create {|book| book.message 'create' }
   after_update {|book| book.message 'update' }
   after_destroy {|book| book.message 'destroy' }
+  after_save {|book| book.message 'create' }
 
   def message action
     msg = { resource: 'books',
@@ -10,6 +11,6 @@ class Book < ActiveRecord::Base
             id: self.id,
             obj: self }
 
-    $redis.publish 'rt-change', msg.to_json
+    $redis.publish 'rt_ecg', msg.to_json
   end
 end
