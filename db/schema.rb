@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20150302215530) do
 #   Unknown type 'hstore' for column 'filters'
 
   create_table "ecgs", :force => true do |t|
-    t.integer  "value"
+    t.float    "value"
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

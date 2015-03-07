@@ -40,13 +40,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: life_test
+  database: rails_realtime_test
   pool: 5
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: life_production
+  database: rails_realtime_production
   pool: 5
   password:
