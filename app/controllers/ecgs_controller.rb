@@ -46,11 +46,9 @@ class EcgsController < ApplicationController
     @ecg.value = params[:value]
     respond_to do |format|
       if @ecg.save
-        format.html { redirect_to @ecg, notice: 'Ecg was successfully created.' }
-        format.json { render json: @ecg, status: :created, location: @ecg }
+        format.json { render json: "1", status: :created, location: @ecg }
       else
-        format.html { render action: "new" }
-        format.json { render json: @ecg.errors, status: :unprocessable_entity }
+        format.json { render json: "0"}
       end
     end
   end
@@ -63,11 +61,9 @@ class EcgsController < ApplicationController
     @ecg.value = params[:value]
     respond_to do |format|
       if @ecg.save
-        format.html { redirect_to @ecg, notice: 'Ecg was successfully created.' }
-        format.json { render json: @ecg, status: :created, location: @ecg }
+        format.json { render json: "1", status: :created, location: @ecg }
       else
-        format.html { render action: "new" }
-        format.json { render json: @ecg.errors, status: :unprocessable_entity }
+        format.json { render json: "0"}
       end
     end
   end
