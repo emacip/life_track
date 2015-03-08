@@ -1,11 +1,12 @@
-var io = require('socket.io').listen(5001),
+
+var io = require('socket.io').listen(1234, {origins: '*:*'}),
     redis = require('redis').createClient();
 
 redis.subscribe('rt_ecg');
 
 io.on('connection', function(socket){
-  redis.on('message', function(channel, message){
-    socket.emit('rt_ecg', JSON.parse(message));
-  });
+    redis.on('message', function(channel, message){
+        socket.send( JSON.parse(message));
+    });
 });
 

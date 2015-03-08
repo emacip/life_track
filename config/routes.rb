@@ -1,6 +1,8 @@
+
 RailsRealtime::Application.routes.draw do
   resources :ecgs do
     match   "new_ecgs" => "ecgs#my_create"
+    get   "get_ecgs"
   end
 
 
