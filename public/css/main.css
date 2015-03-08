@@ -1,0 +1,261 @@
+body{
+	padding-top: 15px;
+    padding-bottom: 20px;
+    background-color:#000;
+    color:#fff;
+}
+
+#single-left{
+	padding:0px;
+}
+
+#single-right{
+	padding-left:0px;
+}
+
+#single-left-top{
+	height:100px;
+}
+
+#single-name h2, #single-name h3, #single-name h4{
+	margin-top:5px;
+}
+
+#single-photo{
+	height:100px;
+}
+
+#single-left-middle{
+	margin-top:35px;
+	margin-bottom:10px;
+}
+
+#metric-graph-holder{
+	height:220px;
+}
+
+.bm-property{
+	font-size:18px;
+	color:rgb(0,193,252);
+}
+
+.bm-value{
+	font-size:24px;
+	color:#fff;
+	-webkit-transition:text-shadow 1s linear;
+	-moz-transition:text-shadow 1s linear;
+	-ms-transition:text-shadow 1s linear;
+	-o-transition:text-shadow 1s linear;
+	transition:text-shadow 1s linear;
+}
+
+.bm-value.glow{
+	text-shadow:0 0 55px rgb(0,193,252);
+}
+
+#single-body{
+	padding:0px;
+	height:600px;
+	z-index:-1;
+}
+
+.body-metrics{
+	position:absolute;
+}
+
+#bm-l-1{
+	top:0px;
+}
+
+#bm-l-2{
+	top:170px;
+}
+
+#bm-l-3{
+	top:380px;
+}
+
+#bm-r-1{
+	top:145px;
+}
+
+#bm-r-2{
+	top:450px;
+}
+
+#sensor-metrics-right{
+	text-align: left;
+}
+
+#sensor-metrics-left{
+	text-align:left;
+}
+
+canvas {
+    background:#000;
+    cursor:crosshair;
+    position:absolute;
+    top:0px;
+    left:15px;
+    z-index:0;
+}
+
+#metric-read-holder{
+	position:aboslute;
+	top:0px;
+	right:0px;
+	z-index:1;
+	padding-right:10px;
+}
+
+#metric-read-value span{
+	font-size:13px;
+}
+
+#metric-read-value h2{
+	margin-top:0px;
+}
+
+#metric-read-prop span{
+	font-size:15px;
+}
+
+#map{
+	padding:0px;
+	height:414px;
+}
+
+#floorplan{
+	margin:0 auto;
+}
+
+.teammate{
+	width:50px;
+	display:inline-block;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:15px;
+}
+
+#team-wrapper>div:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+#tm8{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm8.png");
+}
+
+#tm8:hover{
+	background-image:url("../img/tm/tm8-2.png");
+	cursor:pointer;
+}
+
+#tm7{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm7.png");
+}
+
+#tm7:hover{
+	background-image:url("../img/tm/tm7-2.png");
+	cursor:pointer;
+}
+
+#tm6{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm6.png");
+}
+
+#tm6:hover{
+	background-image:url("../img/tm/tm6-2.png");
+	cursor:pointer;
+}
+
+#tm5{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm5.png");
+}
+
+#tm5:hover{
+	background-image:url("../img/tm/tm5-2.png");
+	cursor:pointer;
+}
+
+#tm4{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm4.png");
+}
+
+#tm4:hover{
+	background-image:url("../img/tm/tm4-2.png");
+	cursor:pointer;
+}
+
+#tm3{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm3.png");
+}
+
+#tm3:hover{
+	background-image:url("../img/tm/tm3-2.png");
+	cursor:pointer;
+}
+
+#tm2{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm2.png");
+}
+
+#tm2:hover{
+	background-image:url("../img/tm/tm2-2.png");
+	cursor:pointer;
+}
+
+#tm1{
+	width:50px;
+	height:50px;
+	background-image:url("../img/tm/tm1.png");
+}
+
+#tm1:hover{
+	background-image:url("../img/tm/tm1-2.png");
+	cursor:pointer;
+}
+
+#dii{
+	position:fixed;
+	bottom:5px;
+	left:5px;
+}
+
+.green{
+	color:rgb(0,255,0);
+}
+
+.mid-blue{
+	color:rgb(0,193,252);
+}
+
+.light-blue{
+	color:rgb(0,255,255);
+}
+
+.orange{
+	color:rgb(255,142,98);
+}
+
+.red{
+	color:rgb(255,26,0);
+}
+
+.pink{
+	color:#E83249;
+}
