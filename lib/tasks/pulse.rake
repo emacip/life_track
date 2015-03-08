@@ -37,6 +37,22 @@ namespace :ECG_pulse do
     end
   end
 
+  desc 'empty database'
+
+  task :clean_database => :environment do
+    run = false
+    while run != true do
+      aux = Ecg.all
+      puts "clean"
+      aux.each do |x|
+        x.delete
+        puts "."
+      end
+      puts "finish" if aux.empty?
+    end
+  end
+
+
   desc 'Load buffer'
 
   task :load_buffer => :environment do

@@ -20,9 +20,6 @@ ActiveRecord::Schema.define(:version => 20150302215530) do
     t.datetime "updated_at", :null => false
   end
 
-# Could not dump table "distribution_rules" because of following StandardError
-#   Unknown type 'hstore' for column 'filters'
-
   create_table "ecgs", :force => true do |t|
     t.float    "value"
     t.integer  "user_id"
